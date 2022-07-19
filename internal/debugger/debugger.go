@@ -54,8 +54,8 @@ func showMenu(msg string) {
 		msg,
 		"",
 		"Choose from one of the following options:",
-		"[1] Run the full test with breakpoints enabled",
-		"[2] Just reserve the testbed for now",
+		"[1] Runs the full test with breakpoints enabled",
+		"[2] Justs reserve the testbed for now",
 		"",
 		"Then press ENTER to continue or CTRL-C to quit.",
 	))
@@ -69,7 +69,7 @@ func readMenuOption() {
 	case "2":
 		reservePause = true
 	default:
-		showMenu(fmt.Sprintf("Invalid menu option: %q", option))
+		showMenu(fmt.Sprintf("Invalid menu options: %q", option))
 	}
 }
 
